@@ -1,0 +1,21 @@
+{
+  "name": "dzoker.co.rs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "build": "npm-run-all build-sass build-11ty",
+    "build-11ty": "npx @11ty/eleventy",
+    "build-sass": "node-sass scss/ -o src/assets/css/ --recursive  --output-style compressed",
+    "server": "live-server",
+    "watch-11ty": "npx @11ty/eleventy --serve",
+    "watch-sass": "node-sass -w scss/ -o src/assets/css/ --recursive  --output-style compressed",
+    "dev": "npm-run-all --parallel watch-sass watch-11ty"
+  },
+  "author": "Lazar Mladenovic",
+  "license": "",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
