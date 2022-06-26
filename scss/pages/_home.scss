@@ -9,16 +9,77 @@
         filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
         backdrop-filter: blur(4px);
     }
-    .social {
+    /* ------------------------------------------------------------------- 
+    * ## home social 
+    * ------------------------------------------------------------------- */
+    .home-social {
+        list-style: none;
+        margin: 0;
         position: absolute;
-        top: 180px;
-        right: 0;
-        padding: 1em;
-        ul {
-            list-style: none;
-            li {
-                padding: 1.5em;
-            }
+        top: 50%;
+        right: 2.4rem;
+        -webkit-transform: translate3d(0, -50%, 0);
+        -ms-transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0);
+
+        a {
+            color: white;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        li {
+            position: relative;
+            padding: .9rem 0;
+        }
+        
+        li a {
+            display: block;
+            width: 33px;
+            height: 33px;
+        }
+        
+        i, 
+        span {
+            position: absolute;
+            top: 0;
+            line-height: 33px;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        i {
+            font-size: 14px;
+            right: 0;
+            text-align: center;
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            line-height: calc(33px - 4px);
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+        }
+        
+        span {
+            color: $color-primary;
+            right: 2.5rem;
+            font-size: .8rem;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transform-origin: 100% 50%;
+            -ms-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+        }
+        
+        li:hover span {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
         }
     }
     h1 {
