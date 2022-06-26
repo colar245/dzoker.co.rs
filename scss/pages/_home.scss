@@ -117,6 +117,7 @@
         a:hover i {
             border-color: $green;
             background-color: $green;
+            transform: rotate(90deg) scale(1.25);
         }
         .phones {
             font-family: 'Roboto Slab';
