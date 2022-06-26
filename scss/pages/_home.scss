@@ -97,16 +97,26 @@
         justify-content: center;
         align-items: center;
         color: $white;
-        i {
-            height: 2em;
-            width: 2em;
-            font-size: 2em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-style: solid;
-            align-content: center;
-            border-radius: 60px;
+        a {
+            color: $white;
+            text-decoration: none;
+            i {
+                height: 2em;
+                width: 2em;
+                font-size: 2em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-style: solid;
+                align-content: center;
+                border-radius: 60px;
+                transform: rotate(90deg);
+                transition: all 200ms ease-in;
+            }
+        }
+        a:hover i {
+            border-color: #168c16;
+            background-color: #168c16;
         }
         .phones {
             font-family: 'Roboto Slab';
