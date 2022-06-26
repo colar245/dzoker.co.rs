@@ -60,7 +60,18 @@ header {
 }
 @media (max-width: $md) {
     header {
-        padding: 20px 20px;
+        padding: 5px 20px;
+        .logo-wrap {
+            .logo {
+                height: 4em;
+            }
+            span {
+                font-size: 1.2em;
+            }
+        }
+        .menu ul li a {
+            font-size: 1em;
+        }
     }
 }
 @media (max-width: $sm) {
