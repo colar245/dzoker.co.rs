@@ -167,6 +167,7 @@
             flex-direction: column;
             flex-wrap: nowrap;
             align-items: center;
+            margin-bottom: 80px;
             justify-content: space-between;
             transition: all 200ms ease-in;
             .card-ico {
@@ -184,6 +185,7 @@
                 align-items: center;
                 flex-direction: column;
                 justify-content: center;
+                padding: 0 1em;
                 h2 {
                     font-weight: 500;
                     font-size: 2em;
@@ -199,7 +201,7 @@
                 font-family: 'Roboto Serif';
                 font-style: normal;
                 font-weight: 200;
-                font-size: 16px;
+                font-size: 1em;
                 line-height: 23px;
                 display: flex;
                 align-items: center;
@@ -223,24 +225,47 @@
         }
         .card:hover {
             box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-            transform: translateY(-3px) scale(1.1);
+            transform: translateY(-3px) scale(1.05);
+        }
+        @media (max-width: $xl) {
+            .card {
+                .card-title {
+                    h2 {
+                        font-size: 1.5em;
+                    }
+                    h3 {
+                        font-size: 1.1em;
+                    }
+                }
+                .span {
+                    font-size: .85em;
+                }
+            }
         }
         @media (max-width: $lg) {
             .card {
                 grid-column: span 2;
-                margin-bottom: 80px;
+                .card-title {
+                    h2 {
+                        font-size: 2em;
+                    }
+                    h3 {
+                        font-size: 1.5em;
+                    }
+                }
+                .span {
+                    font-size: 1em;
+                }
             }
         }
         @media (max-width: $sm) {
+            .title-wrap .phone-box a i {
+                border-color: $green;
+                background-color: $green;
+            }
             .card {
                 grid-column: span 4;
-                margin-bottom: 80px;
             }
         }
-    }
-}
-@media (max-width: $md) {
-    #home {
-        overflow: visible;
     }
 }
