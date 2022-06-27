@@ -162,12 +162,13 @@
             height: 400px;
             width: 100%;
             background-color: $bg-l;
-            border-right: black 1px solid;
+            box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             align-items: center;
             justify-content: space-between;
+            transition: all 200ms ease-in;
             .card-ico {
                 height: 20%;
                 display: flex;
@@ -219,6 +220,10 @@
                     color: #fff;
                 }
             }
+        }
+        .card:hover {
+            box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+            transform: translateY(-3px) scale(1.1);
         }
         @media (max-width: $lg) {
             .card {
