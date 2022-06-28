@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: $font-main;
 }
+body {
+    background-color: $bg-d;
+}
 header {
     position: fixed;
     left: 0px;
@@ -127,6 +130,6 @@ header {
 .body {
     width: 100%;
     height: 100vh;
-    padding: 125px 10%;
-    background-color: $bg-d;
+    padding: 125px 10% 100px 10%;
+    
 }
