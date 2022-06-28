@@ -1,0 +1,21 @@
+#kontakt {
+    .body {
+        align-items: center;
+        align-content: space-around;
+        gap: 40px;
+        .map {
+            height: 100%;
+            grid-column: 1 / span 6;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .kontakt {
+            grid-column: span 6;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

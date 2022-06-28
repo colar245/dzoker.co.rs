@@ -123,3 +123,11 @@ header {
         }
     }
 }
+.body {
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-l;
+    padding: 125px 10%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
