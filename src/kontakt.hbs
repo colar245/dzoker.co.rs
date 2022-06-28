@@ -25,21 +25,33 @@
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000.8990855918313!2d20.385966133522757!3d44.80179752261525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f680c0e614d%3A0x859b6a8d958aaae0!2sZalagaonica%20D%C5%BEoker!5e0!3m2!1sen!2srs!4v1656371786347!5m2!1sen!2srs" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="adresa grid-span-3">
-        <h1>Adresa:</h1>
-        <span>Jurija Gagarina, 151A <br> T.C.Piramida II sprat Lok. 86 <br> Beograd - Novi Beograd, 11070</span>
+      <div class="adresa kontakt">
+        <i class="fa-solid fa-house"></i>
+        <div class="txt">
+          <h1>Adresa</h1>
+          <span>Jurija Gagarina, 151A <br> T.C.Piramida II sprat Lok. 86 <br><br> Beograd <br> Novi Beograd, 11070</span>
+        </div>
       </div>
-      <div class="radno">
-        <h1>Radno vreme:</h1>
-        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit eligendi tempore iusto laborum molestias doloremque mollitia cumque molestiae suscipit voluptate vitae impedit, quasi excepturi culpa ratione nostrum iste reiciendis?</span>
+      <div class="radno kontakt">
+        <i class="fa-solid fa-clock"></i>
+        <div class="txt">
+          <h1>Radno vreme</h1>
+          <span><b>Radnim danom:</b> <br> 09:00 - 20:00 <br><br> <b>Subotom:</b> <br> 09:00 - 16:00</span>
+        </div>
       </div>
-      <div class="telefon grid-span-3">
-        <h1>Telefon:</h1>
-        <p>011 318 56 69<br>069 318 56 69</p>
+      <div class="telefon kontakt">
+        <i class="fa-solid fa-phone"></i>
+        <div class="txt">
+          <h1>Telefon</h1>
+          <span>011 318 56 69<br><br> 069 318 56 69</span>
+        </div>
       </div>
-      <div class="email grid-span-3">
-        <h1>Email</h1>
-        <p>{{ data.email }}</p>
+      <div class="email kontakt">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="txt">
+          <h1>Email</h1>
+          <span>{{ data.email }}</span>
+        </div>
       </div>
     </div>
     <!-- preloader
@@ -47,6 +59,6 @@
     {{> _preloader }}
     <script src="../assets/js/main.js"></script>
     <!-- Fontawesome CDN -->
-    {{!-- <script src="https://kit.fontawesome.com/3f7f7bdb28.js" crossorigin="anonymous"></script> --}}
+    <script src="https://kit.fontawesome.com/3f7f7bdb28.js" crossorigin="anonymous"></script>
   </body>
 </html>
