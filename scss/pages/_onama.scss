@@ -13,6 +13,7 @@
                 width: 50%;
                 height: 200px;
                 padding: 1.2rem;
+                overflow: hidden;
                 background-color: $color-primary;
                 color: $gray;
                 img {
@@ -39,7 +40,7 @@
             p {
                 color: $gray;
                 margin-top: 2rem;
-                width: 50%;
+                width: 100%;
                 font-family: 'Roboto Serif';
                 font-style: normal;
                 font-weight: 200;
