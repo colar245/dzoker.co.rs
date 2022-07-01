@@ -1,3 +1,75 @@
 #usluge {
+    background-color: $bg-l;
+    section {
+        padding: 5em 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-column: 1 / -1;
+        h1 {
+            color: $color-primary;
+            font-size: 3em;
+        }
+        p {
+            padding-top: 2em;
+            width: 50%;
+            font-family: 'Roboto Serif';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 1em;
+            line-height: 23px;
+        }
+    }
     
+    .container {
+        max-width: 1500px;
+        margin: auto;
+        padding: 3rem;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        .predmet {
+            grid-column: auto / span 2;
+            padding: 2em;
+            border-radius: .3em;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            i {
+                width: 50px;
+                font-size: 2em;
+            }
+            div {
+                padding: 2em;
+                padding-top: 0;
+                h2 {
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+    .container2 {
+        max-width: 1500px;
+        margin: auto;
+        padding: 3rem;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        img {
+            max-width: 100%;
+            margin: auto;
+            border-radius: .3em;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+        }
+        p {
+            max-width: 100%;
+            margin: auto;
+            margin-top: 0;
+            font-family: 'Roboto Serif';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 1.25em;
+            line-height: 25px;
+        }
+    }
 }
