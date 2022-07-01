@@ -10,12 +10,12 @@
             width: 50%;
             padding: 2rem;
             .title {
-                width: 50%;
+                width: 100%;
                 height: 200px;
                 padding: 1.2rem;
                 overflow: hidden;
                 background-color: $color-primary;
-                color: $gray;
+                color: #000;
                 img {
                     margin: 0;
                     padding: 0;
@@ -30,13 +30,13 @@
                         text-transform: uppercase;
                     }
                     h1 {
-                        font-size: 4em;
+                        font-size: 5em;
                         margin: 0;
                     }
                 }
             }
             p {
-                color: $gray;
+                color: $bg-d;
                 margin-top: 2rem;
                 width: 100%;
                 font-family: 'Roboto Serif';
