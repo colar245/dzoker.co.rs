@@ -85,6 +85,11 @@
             transform: scale(1);
         }
     }
+    @media (max-width: $xs) {
+        .home-social {
+            display: none;
+        }
+    }
     .grid-container {
         width: 80%;
         display: grid;
