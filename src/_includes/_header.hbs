@@ -1,12 +1,12 @@
 <header>
   <div class="logo-wrap">
-    <img class="logo" src="{{ data.root }}/assets/img/jokerLogo.svg" alt="logo" />
+    <a href="{{ data.root }}/"><img class="logo" src="{{ data.root }}/assets/img/jokerLogo.svg" alt="logo" /></a>
     <span class="nav-name">Džoker company d.o.o.</span>
   </div>
   <div class="menuToggle" onclick="toggleMenu();"></div>
   <nav class="menu">
     <ul class="">
-      <li><a href="/" class="active" onclick="toggleMenu();">Početna</a></li>
+      <li><a href="{{ data.root }}/" class="active" onclick="toggleMenu();">Početna</a></li>
       <li><a href="{{ data.root }}/usluge" onclick="toggleMenu();">Usluge</a></li>
       <li><a href="{{ data.root }}/onama" onclick="toggleMenu();">O nama</a></li>
       <li><a href="{{ data.root }}/kontakt" onclick="toggleMenu();">Kontakt</a></li>
