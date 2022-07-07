@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
 
-$font-main: 'Roboto Slab', serif;
+@font-face {
+    font-family: 'TimesNewRoman';
+    src: url('./assets/fonts/Times New Roman/times new roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TimesNewRoman';
+    src: url('./assets/fonts/Times New Roman/times new roman bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TimesNewRoman';
+    src: url('./assets/fonts/Times New Roman/times new roman italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TimesNewRoman';
+    src: url('./assets/fonts/Times New Roman/times new roman bold italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('./assets/fonts/Arial/Arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// $font-main: 'Roboto Slab', serif;
+$font-main: 'TimesNewRoman';
+
 // $font-sans-serif: 'Raleway', sans-serif;
 // $font-title: 'Montserrat', sans-serif;

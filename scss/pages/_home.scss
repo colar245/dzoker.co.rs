@@ -97,9 +97,9 @@
         position: relative;
         justify-items: center;
         align-items: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(10, 1fr);
         .title-wrap {
-            grid-column: 1 / span 4;
+            grid-column: 1 / span 10;
             grid-row: 1;
             margin-bottom: 75px;
             h1 {
@@ -167,6 +167,7 @@
         .card {
             height: 400px;
             width: 100%;
+            grid-column: span 2;
             background-color: $bg-l;
             box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
             display: flex;
@@ -177,12 +178,12 @@
             justify-content: space-between;
             transition: all 200ms ease-in;
             .card-ico {
-                height: 20%;
+                height: 25%;
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-end;
                 i {
-                    font-size: 2.5em;
+                    font-size: 3em;
                 }
             }
             .card-title {
@@ -191,6 +192,7 @@
                 align-items: center;
                 flex-direction: column;
                 justify-content: center;
+                text-transform: uppercase;
                 padding: 0 1em;
                 h2 {
                     font-weight: 500;
@@ -250,7 +252,7 @@
         }
         @media (max-width: $lg) {
             .card {
-                grid-column: span 2;
+                grid-column: span 5;
                 .card-title {
                     h2 {
                         font-size: 2em;
@@ -270,7 +272,8 @@
                 background-color: $green;
             }
             .card {
-                grid-column: span 4;
+                grid-column: span 10;
+                width: 80%;
             }
         }
     }
